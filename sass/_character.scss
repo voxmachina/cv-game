@@ -1,0 +1,78 @@
+@include keyframes(walk-right) {
+    from {
+        background-position: 0 -712px;
+    }
+    to {
+        background-position: -448px -712px;
+    }
+}
+
+@include keyframes(walk-left) {
+    from {
+        background-position: 0 -585px;
+    }
+    to {
+        background-position: -448px -585px;
+    }
+}
+
+@include keyframes(move-right) {
+    from {
+        left: 10px;
+    }
+    to {
+        left: 40vw;
+    }
+}
+
+@include keyframes(move-left) {
+    from {
+        left: 40vw;
+    }
+    to {
+        left: 10px;
+    }
+}
+
+@include keyframes(back-wave) {
+    from {
+        background-position: 0 -10px;
+    }
+    to {
+        background-position: -448px -10px;
+    }
+}
+
+.char {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: url('../img/char.png') no-repeat;
+    width: 63px;
+    height: 63px;
+    @include transform(translate3d(0, 0, 0));
+    background-position: 0 -135px;
+    
+    &:after {
+        content: " ";
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        bottom: 6px;
+        left: 16px;
+        height: 0;
+        background: transparent;
+        color: none;
+        box-shadow: 0px -4px 6px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &-walk-right {
+        background-position: 0 -712px;
+        @include animation('walk-right 1s steps(7) infinite');
+    }
+
+    &-back-wave {
+        background-position: 0 -712px;
+        @include animation('walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards');
+    }
+}

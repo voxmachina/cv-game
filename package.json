@@ -1,0 +1,25 @@
+{
+  "name": "cv-game",
+  "version": "1.0.0",
+  "description": "My CV as a Game",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voxmachina/cv-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/voxmachina/cv-game/issues"
+  },
+  "homepage": "https://github.com/voxmachina/cv-game#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "2.3.2",
+    "lite-server": "2.2.2"
+  }
+}

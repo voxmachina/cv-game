@@ -1,0 +1,68 @@
+@include keyframes(moveclouds) {
+    from {
+        margin-left: 120vw;
+    }
+
+    to {
+        margin-left: -120vw;
+    }
+}
+
+.clouds {
+    padding: 10vh 0;
+    height: 65vh;
+    @include linear-gradient(top, #c9dbe9, #fff);
+
+    span {
+        display: block;
+        position: relative;
+        margin-top: 10vh;
+        width: 200px;
+        height: 60px;
+        background: #fff;
+        @include border-radius(200px);
+        @include transform(translate3d(0, 0, 0));
+
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            @include border-radius(100px);
+            @include rotate(30);
+            @include transform(translate3d(0, 0, 0));
+        }
+
+        &:after {
+            width: 120px;
+            height: 120px;
+            top: -55px;
+            left: auto;
+            right: 15px;
+        }
+
+        &:nth-child(1) {
+            @include cloud(25);
+        }
+
+        &:nth-child(2) {
+            @include cloud(35, 0.6, 200px);
+        }
+
+        &:nth-child(3) {
+            @include cloud(30, 0.8, -250px, -200px);
+        }
+
+        &:nth-child(4) {
+            @include cloud(28, 0.75, 470px, -250px);
+        }
+
+        &:nth-child(5) {
+            @include cloud(30, 0.8, -150px, -150px);
+        }
+    }
+}
