@@ -777,6 +777,13 @@ template {
       -moz-animation: movecards 10s linear;
       -o-animation: movecards 10s linear;
       animation: movecards 10s linear; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .cv-items .cv-item.active {
+          border: 2px solid red;
+          -webkit-animation: movecards 20s linear;
+          -moz-animation: movecards 20s linear;
+          -o-animation: movecards 20s linear;
+          animation: movecards 20s linear; } }
 
 .game {
   position: absolute;
