@@ -41,12 +41,10 @@
             @include animation('movecards 10s linear');
 
             @include tablet {
-                border: 2px solid red;
                 @include animation('movecards 20s linear');
             }
 
             @include desktop {
-                border: 2px solid green;
                 @include animation('movecards 30s linear');
             }
         }

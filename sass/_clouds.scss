@@ -47,22 +47,62 @@
 
         &:nth-child(1) {
             @include cloud(25);
+
+            @include tablet {
+                @include cloud(45);
+            }
+
+            @include desktop {
+                @include cloud(65);
+            }
         }
 
         &:nth-child(2) {
             @include cloud(35, 0.6, 200px);
+
+            @include tablet {
+                @include cloud(70, 0.6, 200px);
+            }
+
+            @include desktop {
+                @include cloud(140, 0.6, 200px);
+            }
         }
 
         &:nth-child(3) {
             @include cloud(30, 0.8, -250px, -200px);
+
+            @include tablet {
+                @include cloud(60, 0.8, -250px, -200px);
+            }
+
+            @include desktop {
+                @include cloud(120, 0.8, -250px, -200px);
+            }
         }
 
         &:nth-child(4) {
             @include cloud(28, 0.75, 470px, -250px);
+
+            @include tablet {
+                @include cloud(56, 0.75, 470px, -250px);
+            }
+
+            @include desktop {
+                @include cloud(112, 0.75, 470px, -250px);
+            }
         }
 
         &:nth-child(5) {
             @include cloud(30, 0.8, -150px, -150px);
+
+            @include tablet {
+                @include cloud(60, 0.8, -150px, -150px);
+            }
+
+            @include desktop {
+                @include cloud(120, 0.8, -150px, -150px);
+            }
         }
     }
 }
