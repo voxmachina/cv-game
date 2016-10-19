@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/voxmachina/cv-game#readme",
   "devDependencies": {
+    "del": "2.2.2",
+    "event-stream": "3.3.4",
     "gulp": "3.9.1",
+    "gulp-minifier": "0.1.4",
+    "gulp-rev-append-all": "0.1.6",
     "gulp-sass": "2.3.2",
     "lite-server": "2.2.2"
   }
