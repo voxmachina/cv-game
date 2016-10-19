@@ -1,16 +1,17 @@
 @include keyframes(moveclouds) {
     from {
-        margin-left: 120vw;
+        margin-left: 200vw;
     }
 
     to {
-        margin-left: -120vw;
+        margin-left: -200vw;
     }
 }
 
 .clouds {
     padding: 10vh 0;
     height: 65vh;
+    overflow: hidden;
     @include linear-gradient(top, #c9dbe9, #fff);
 
     span {

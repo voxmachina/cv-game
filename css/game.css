@@ -404,31 +404,32 @@ template {
 
 @-webkit-keyframes moveclouds {
   from {
-    margin-left: 120vw; }
+    margin-left: 200vw; }
   to {
-    margin-left: -120vw; } }
+    margin-left: -200vw; } }
 
 @-moz-keyframes moveclouds {
   from {
-    margin-left: 120vw; }
+    margin-left: 200vw; }
   to {
-    margin-left: -120vw; } }
+    margin-left: -200vw; } }
 
 @-o-keyframes moveclouds {
   from {
-    margin-left: 120vw; }
+    margin-left: 200vw; }
   to {
-    margin-left: -120vw; } }
+    margin-left: -200vw; } }
 
 @keyframes moveclouds {
   from {
-    margin-left: 120vw; }
+    margin-left: 200vw; }
   to {
-    margin-left: -120vw; } }
+    margin-left: -200vw; } }
 
 .clouds {
   padding: 10vh 0;
   height: 65vh;
+  overflow: hidden;
   background: #c9dbe9;
   background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
   background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
@@ -919,6 +920,10 @@ template {
           -moz-animation: movecards 30s linear;
           -o-animation: movecards 30s linear;
           animation: movecards 30s linear; } }
+
+a {
+  color: #fff;
+  text-decoration: underline; }
 
 .game {
   position: absolute;

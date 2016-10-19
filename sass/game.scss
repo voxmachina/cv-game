@@ -5,6 +5,11 @@
 @import "_character";
 @import "_cv_items";
 
+a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .game {
     position: absolute;
     overflow: hidden;
