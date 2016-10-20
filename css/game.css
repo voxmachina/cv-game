@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -831,9 +832,9 @@ template {
   0% {
     margin-left: 120vw; }
   40% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   60% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   100% {
     margin-left: -120vw; } }
 
@@ -841,9 +842,9 @@ template {
   0% {
     margin-left: 120vw; }
   40% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   60% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   100% {
     margin-left: -120vw; } }
 
@@ -851,9 +852,9 @@ template {
   0% {
     margin-left: 120vw; }
   40% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   60% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   100% {
     margin-left: -120vw; } }
 
@@ -861,9 +862,49 @@ template {
   0% {
     margin-left: 120vw; }
   40% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
   60% {
-    margin-left: 25vw; }
+    margin-left: 15vw; }
+  100% {
+    margin-left: -120vw; } }
+
+@-webkit-keyframes movecards-desktop {
+  0% {
+    margin-left: 120vw; }
+  40% {
+    margin-left: 35vw; }
+  60% {
+    margin-left: 35vw; }
+  100% {
+    margin-left: -120vw; } }
+
+@-moz-keyframes movecards-desktop {
+  0% {
+    margin-left: 120vw; }
+  40% {
+    margin-left: 35vw; }
+  60% {
+    margin-left: 35vw; }
+  100% {
+    margin-left: -120vw; } }
+
+@-o-keyframes movecards-desktop {
+  0% {
+    margin-left: 120vw; }
+  40% {
+    margin-left: 35vw; }
+  60% {
+    margin-left: 35vw; }
+  100% {
+    margin-left: -120vw; } }
+
+@keyframes movecards-desktop {
+  0% {
+    margin-left: 120vw; }
+  40% {
+    margin-left: 35vw; }
+  60% {
+    margin-left: 35vw; }
   100% {
     margin-left: -120vw; } }
 
@@ -890,8 +931,8 @@ template {
   .cv-items .cv-item {
     position: absolute;
     margin-left: 120vw;
-    font-size: 10px;
-    width: 50vw;
+    font-size: 0.9rem;
+    width: 70vw;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
     padding: 10px;
@@ -913,13 +954,19 @@ template {
           -webkit-animation: movecards 20s linear;
           -moz-animation: movecards 20s linear;
           -o-animation: movecards 20s linear;
-          animation: movecards 20s linear; } }
+          animation: movecards 20s linear;
+          width: 30vw; } }
       @media (min-width: 1024px) {
         .cv-items .cv-item.active {
-          -webkit-animation: movecards 30s linear;
-          -moz-animation: movecards 30s linear;
-          -o-animation: movecards 30s linear;
-          animation: movecards 30s linear; } }
+          -webkit-animation: movecards-desktop 30s linear;
+          -moz-animation: movecards-desktop 30s linear;
+          -o-animation: movecards-desktop 30s linear;
+          animation: movecards-desktop 30s linear;
+          width: 30vw; } }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem; }
 
 a {
   color: #fff;

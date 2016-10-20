@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 @import "_normalize";
 @import "_mixins";
 @import "_flex_mixins";
 @import "_clouds";
 @import "_character";
 @import "_cv_items";
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
+}
 
 a {
     color: #fff;
