@@ -404,26 +404,18 @@ template {
   display: none; }
 
 @-webkit-keyframes moveclouds {
-  from {
-    margin-left: 200vw; }
   to {
     margin-left: -200vw; } }
 
 @-moz-keyframes moveclouds {
-  from {
-    margin-left: 200vw; }
   to {
     margin-left: -200vw; } }
 
 @-o-keyframes moveclouds {
-  from {
-    margin-left: 200vw; }
   to {
     margin-left: -200vw; } }
 
 @keyframes moveclouds {
-  from {
-    margin-left: 200vw; }
   to {
     margin-left: -200vw; } }
 
@@ -484,7 +476,8 @@ template {
       -webkit-animation: moveclouds 25s linear infinite;
       -moz-animation: moveclouds 25s linear infinite;
       -o-animation: moveclouds 25s linear infinite;
-      animation: moveclouds 25s linear infinite; }
+      animation: moveclouds 25s linear infinite;
+      margin-left: 120vw; }
       @media (min-width: 768px) and (max-width: 1023px) {
         .clouds span:nth-child(1) {
           -webkit-animation: moveclouds 45s linear infinite;
@@ -498,6 +491,7 @@ template {
           -o-animation: moveclouds 65s linear infinite;
           animation: moveclouds 65s linear infinite; } }
     .clouds span:nth-child(2) {
+      margin-left: 20vw;
       left: 200px;
       -moz-transform: scale(0.6);
       -o-transform: scale(0.6);
@@ -539,6 +533,7 @@ template {
           -o-animation: moveclouds 140s linear infinite;
           animation: moveclouds 140s linear infinite; } }
     .clouds span:nth-child(3) {
+      margin-left: 200vw;
       left: -250px;
       top: -200px;
       -moz-transform: scale(0.8);
@@ -583,6 +578,7 @@ template {
           -o-animation: moveclouds 120s linear infinite;
           animation: moveclouds 120s linear infinite; } }
     .clouds span:nth-child(4) {
+      margin-left: 50vw;
       left: 470px;
       top: -250px;
       -moz-transform: scale(0.75);
@@ -627,6 +623,7 @@ template {
           -o-animation: moveclouds 112s linear infinite;
           animation: moveclouds 112s linear infinite; } }
     .clouds span:nth-child(5) {
+      margin-left: 150vw;
       left: -150px;
       top: -150px;
       -moz-transform: scale(0.8);
@@ -823,10 +820,16 @@ template {
     animation: walk-right 1s steps(7) infinite; }
   .char-back-wave {
     background-position: 0 -712px;
-    -webkit-animation: walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards;
-    -moz-animation: walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards;
-    -o-animation: walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards;
-    animation: walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards; }
+    -webkit-animation: walk-right 1s steps(7) 4, move-right 4s forwards, back-wave 1s 4s steps(7) 1, walk-left 1s 5s steps(7) 3, move-left 3s 5s forwards;
+    -moz-animation: walk-right 1s steps(7) 4, move-right 4s forwards, back-wave 1s 4s steps(7) 1, walk-left 1s 5s steps(7) 3, move-left 3s 5s forwards;
+    -o-animation: walk-right 1s steps(7) 4, move-right 4s forwards, back-wave 1s 4s steps(7) 1, walk-left 1s 5s steps(7) 3, move-left 3s 5s forwards;
+    animation: walk-right 1s steps(7) 4, move-right 4s forwards, back-wave 1s 4s steps(7) 1, walk-left 1s 5s steps(7) 3, move-left 3s 5s forwards; }
+    @media (min-width: 1024px) {
+      .char-back-wave {
+        -webkit-animation: walk-right 1s steps(7) 9, move-right 9s forwards, back-wave 1s 9s steps(7) 1, walk-left 1s 10s steps(7) 9, move-left 9s 10s forwards;
+        -moz-animation: walk-right 1s steps(7) 9, move-right 9s forwards, back-wave 1s 9s steps(7) 1, walk-left 1s 10s steps(7) 9, move-left 9s 10s forwards;
+        -o-animation: walk-right 1s steps(7) 9, move-right 9s forwards, back-wave 1s 9s steps(7) 1, walk-left 1s 10s steps(7) 9, move-left 9s 10s forwards;
+        animation: walk-right 1s steps(7) 9, move-right 9s forwards, back-wave 1s 9s steps(7) 1, walk-left 1s 10s steps(7) 9, move-left 9s 10s forwards; } }
 
 @-webkit-keyframes movecards {
   0% {
@@ -958,10 +961,10 @@ template {
           width: 30vw; } }
       @media (min-width: 1024px) {
         .cv-items .cv-item.active {
-          -webkit-animation: movecards-desktop 30s linear;
-          -moz-animation: movecards-desktop 30s linear;
-          -o-animation: movecards-desktop 30s linear;
-          animation: movecards-desktop 30s linear;
+          -webkit-animation: movecards-desktop 20s linear;
+          -moz-animation: movecards-desktop 20s linear;
+          -o-animation: movecards-desktop 20s linear;
+          animation: movecards-desktop 20s linear;
           width: 30vw; } }
 
 body {

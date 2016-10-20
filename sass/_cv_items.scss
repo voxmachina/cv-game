@@ -64,7 +64,7 @@
             }
 
             @include desktop {
-                @include animation('movecards-desktop 30s linear');
+                @include animation('movecards-desktop 20s linear');
                 width: 30vw;
             }
         }

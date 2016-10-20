@@ -6,6 +6,9 @@
     var parent;
     var children;
     var char;
+    var windowWidth;
+    var windowHeight;
+    var charDelay = 8000;
     
     var Game = window.Game = function () {
         var elem = document.querySelector(".cv-item.active");
@@ -14,8 +17,27 @@
         children = parent.querySelectorAll(".cv-item");
         char = document.querySelector(".char");
 
+        windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        windowWidth = parseInt(windowWidth);
+        windowHeight = parseInt(windowHeight);
+
         elem.addEventListener("animationstart", this.prepare.bind(this));
         elem.addEventListener("animationend", this.next.bind(this));
+
+        if (this.isDesktop()) {
+            charDelay = 19000;
+        } else if (this.isTablet()) {
+            charDelay = 8000;
+        }
+    };
+
+    Game.prototype.isTablet = function() {
+        return windowWidth > 767 && windowWidth < 1024;
+    };
+
+    Game.prototype.isDesktop = function() {
+        return windowWidth > 1023;
     };
 
     Game.prototype.prepare = function(evt) {
@@ -36,7 +58,7 @@
 
         setTimeout(function() {
             charBack();
-        }, 9000);
+        }, charDelay);
         
         handler.innerHTML = next.innerHTML;
     };

@@ -1,7 +1,7 @@
 @include keyframes(moveclouds) {
-    from {
-        margin-left: 200vw;
-    }
+    // from {
+    //     margin-left: 200vw;
+    // }
 
     to {
         margin-left: -200vw;
@@ -48,6 +48,7 @@
 
         &:nth-child(1) {
             @include cloud(25);
+            margin-left: 120vw;
 
             @include tablet {
                 @include cloud(45);
@@ -59,6 +60,7 @@
         }
 
         &:nth-child(2) {
+            margin-left: 20vw;
             @include cloud(35, 0.6, 200px);
 
             @include tablet {
@@ -71,6 +73,7 @@
         }
 
         &:nth-child(3) {
+            margin-left: 200vw;
             @include cloud(30, 0.8, -250px, -200px);
 
             @include tablet {
@@ -83,6 +86,7 @@
         }
 
         &:nth-child(4) {
+            margin-left: 50vw;
             @include cloud(28, 0.75, 470px, -250px);
 
             @include tablet {
@@ -95,6 +99,7 @@
         }
 
         &:nth-child(5) {
+            margin-left: 150vw;
             @include cloud(30, 0.8, -150px, -150px);
 
             @include tablet {

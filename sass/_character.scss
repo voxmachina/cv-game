@@ -73,6 +73,10 @@
 
     &-back-wave {
         background-position: 0 -712px;
-        @include animation('walk-right 1s steps(7) 3, move-right 3s forwards, back-wave 3s 3s steps(7) 1, walk-left 1s 6s steps(7) 3, move-left 3s 6s forwards');
+        @include animation('walk-right 1s steps(7) 4, move-right 4s forwards, back-wave 1s 4s steps(7) 1, walk-left 1s 5s steps(7) 3, move-left 3s 5s forwards');
+
+        @include desktop {
+            @include animation('walk-right 1s steps(7) 9, move-right 9s forwards, back-wave 1s 9s steps(7) 1, walk-left 1s 10s steps(7) 9, move-left 9s 10s forwards');
+        }
     }
 }
